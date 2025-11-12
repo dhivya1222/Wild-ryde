@@ -9,11 +9,11 @@ WildRydes.map = WildRydes.map || {};
         if (token) {
             authToken = token;
         } else {
-            window.location.href = '/ride.html';
+            window.location.href = '/index.html';
         }
     }).catch(function handleTokenError(error) {
         alert(error);
-        window.location.href = '/ride.html';
+        window.location.href = '/index.html';
     });
     function requestUnicorn(pickupLocation) {
         $.ajax({
@@ -105,4 +105,5 @@ WildRydes.map = WildRydes.map || {};
         $('#updates').append($('<li>' + text + '</li>'));
     }
 }(jQuery));
+
 
